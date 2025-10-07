@@ -8,7 +8,7 @@ class Program
 
         while (true)
         {
-            Console.WriteLine("---Вендинговый Автомат---");
+            Console.WriteLine("\n---Вендинговый Автомат---");
             Console.WriteLine("1. Show Products");
             Console.WriteLine("2. Insert Coin");
             Console.WriteLine("3. Buy Product");
@@ -24,7 +24,7 @@ class Program
                     break;
 
                 case "2":
-                    Console.WriteLine("Выберете номинал вставляемой монеты (1,2,5,10): ");
+                    Console.WriteLine("Выберете номинал вставляемой монеты (1, 2, 5, 10): ");
                     string? value = Console.ReadLine();
                     try
                     {
@@ -39,7 +39,7 @@ class Program
 
                 case "3":
                     vm.ShowProducts();
-                    Console.WriteLine("Введите номер товара для покупки: ");
+                    Console.Write("Введите номер товара для покупки: ");
                     try
                     {
                         int idx = Convert.ToInt32(Console.ReadLine());
@@ -64,6 +64,7 @@ class Program
                         Console.WriteLine("Такого товара не существует.");
                     }
                     break;
+
                 case "4":
                     Console.Write("Введите админ-пароль: ");
                     string? pass = Console.ReadLine();
@@ -72,67 +73,70 @@ class Program
                         while (true)
                         {
                             Console.WriteLine("\n---Admin Menu---");
-                            Console.WriteLine("1. Restock product");
+                            Console.WriteLine("1. Add Q to products");
                             Console.WriteLine("2. Add new product");
                             Console.WriteLine("3. Back");
                             Console.Write("Выберите действие: ");
                             string? a = Console.ReadLine();
 
-                            if (a == "1")
+                            switch (a)
                             {
-                                vm.ShowProducts();
-                                Console.Write("Номер товара для пополнения: ");
-                                try
-                                {
-                                    int num = Convert.ToInt32(Console.ReadLine());
-                                    Console.Write("Количество: ");
-                                    int amount = Convert.ToInt32(Console.ReadLine());
-
-                                    if (vm.AddQProduct(num - 1, amount))
-                                        Console.WriteLine("Пополнение успешно.");
-                                    else
-                                        Console.WriteLine("Ошибка при пополнении.");
-                                }
-                                catch
-                                {
-                                    Console.WriteLine("Некорректный ввод.");
-                                }
-                            }
-                            else if (a == "2")
-                            {
-                                Console.Write("Название: ");
-                                string? name = Console.ReadLine();
-                                Console.Write("Цена: ");
-                                try
-                                {
-                                    int price = Convert.ToInt32(Console.ReadLine());
-                                    Console.Write("Количество: ");
-                                    int quant = Convert.ToInt32(Console.ReadLine());
-
-                                    if (!string.IsNullOrEmpty(name))
+                                case "1":
+                                    vm.ShowProducts();
+                                    Console.Write("Номер товара для пополнения: ");
+                                    try
                                     {
-                                        vm.AddProducts(name, price, quant);
-                                        Console.WriteLine("Товар добавлен.");
+                                        int num = Convert.ToInt32(Console.ReadLine());
+                                        Console.Write("Количество: ");
+                                        int amount = Convert.ToInt32(Console.ReadLine());
+
+                                        if (vm.AddQProduct(num - 1, amount))
+                                            Console.WriteLine("Пополнение успешно.");
+                                        else
+                                            Console.WriteLine("Ошибка при пополнении.");
                                     }
-                                    else
+                                    catch
                                     {
-                                        Console.WriteLine("Неверное название.");
+                                        Console.WriteLine("Некорректный ввод.");
                                     }
-                                }
-                                catch
-                                {
-                                    Console.WriteLine("Некорректный ввод.");
-                                }
-                            }
-                            else if (a == "3")
-                            {
-                                break;
-                            }
-                            else
-                            {
-                                Console.WriteLine("Неверная команда.");
+                                    break;
+
+                                case "2":
+                                    Console.Write("Название: ");
+                                    string? name = Console.ReadLine();
+                                    Console.Write("Цена: ");
+                                    try
+                                    {
+                                        int price = Convert.ToInt32(Console.ReadLine());
+                                        Console.Write("Количество: ");
+                                        int quant = Convert.ToInt32(Console.ReadLine());
+
+                                        if (!string.IsNullOrEmpty(name))
+                                        {
+                                            vm.AddProducts(name, price, quant);
+                                            Console.WriteLine("Товар добавлен.");
+                                        }
+                                        else
+                                        {
+                                            Console.WriteLine("Неверное название.");
+                                        }
+                                    }
+                                    catch
+                                    {
+                                        Console.WriteLine("Некорректный ввод.");
+                                    }
+                                    break;
+
+                                case "3":
+                                    Console.WriteLine("Выход из админ-меню...");
+                                    goto EndAdmin;
+                                    
+                                default:
+                                    Console.WriteLine("Неверный выбор.");
+                                    break;
                             }
                         }
+                        EndAdmin: ;
                     }
                     else
                     {
@@ -145,7 +149,7 @@ class Program
                     return;
 
                 default:
-                    Console.WriteLine("Неверный выбор");
+                    Console.WriteLine("Неверный выбор.");
                     break;
             }
         }

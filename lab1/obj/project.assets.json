@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/arsenijsafancikov/_Dev/Csharp/VendingMachine/lab1.csproj",
+      "projectUniqueName": "/Users/arsenijsafancikov/_Dev/Csharp/OOP/lab1/lab1.csproj",
       "projectName": "lab1",
-      "projectPath": "/Users/arsenijsafancikov/_Dev/Csharp/VendingMachine/lab1.csproj",
+      "projectPath": "/Users/arsenijsafancikov/_Dev/Csharp/OOP/lab1/lab1.csproj",
       "packagesPath": "/Users/arsenijsafancikov/.nuget/packages/",
-      "outputPath": "/Users/arsenijsafancikov/_Dev/Csharp/VendingMachine/obj/",
+      "outputPath": "/Users/arsenijsafancikov/_Dev/Csharp/OOP/lab1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/arsenijsafancikov/.nuget/NuGet/NuGet.Config"

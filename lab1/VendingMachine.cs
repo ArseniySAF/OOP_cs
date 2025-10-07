@@ -29,7 +29,7 @@ public class VendingMachine
         }
         else
         {
-            Console.WriteLine("Invaid Coin");
+            Console.WriteLine("Вставьте только доступную монету.");
         }
 
     }
