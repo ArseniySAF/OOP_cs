@@ -3,7 +3,7 @@ namespace Vendingmachine;
 public class VendingMachine
 {
     public List<Product> Products { get; }
-    public int InsertedMoney { get; private set; }
+    public int InsertedMoney { get; set; }
     public int TotalMoney { get; private set; } // касса
     private int[] validCoins = { 1, 2, 5, 10 };
 
