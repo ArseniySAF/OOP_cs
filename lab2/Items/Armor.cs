@@ -11,6 +11,11 @@ public class Armor : Item
 
     public override void Use()
     {
-        IsEquipped = true;
+        Equip();
+    }
+
+    public void Upgrade()
+    {
+        Defense += 5;
     }
 }

@@ -11,7 +11,7 @@ public class Weapon : Item
 
     public override void Use()
     {
-        IsEquipped = true;
+        Equip();
     }
 
     public void Upgrade()

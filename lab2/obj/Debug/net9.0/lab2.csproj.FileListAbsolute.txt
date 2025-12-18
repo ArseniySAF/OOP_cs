@@ -1,0 +1,15 @@
+/Users/arsenijsafancikov/Dev/csharp/OOP/lab2/bin/Debug/net9.0/lab2
+/Users/arsenijsafancikov/Dev/csharp/OOP/lab2/bin/Debug/net9.0/lab2.deps.json
+/Users/arsenijsafancikov/Dev/csharp/OOP/lab2/bin/Debug/net9.0/lab2.runtimeconfig.json
+/Users/arsenijsafancikov/Dev/csharp/OOP/lab2/bin/Debug/net9.0/lab2.dll
+/Users/arsenijsafancikov/Dev/csharp/OOP/lab2/bin/Debug/net9.0/lab2.pdb
+/Users/arsenijsafancikov/Dev/csharp/OOP/lab2/obj/Debug/net9.0/lab2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/arsenijsafancikov/Dev/csharp/OOP/lab2/obj/Debug/net9.0/lab2.AssemblyInfoInputs.cache
+/Users/arsenijsafancikov/Dev/csharp/OOP/lab2/obj/Debug/net9.0/lab2.AssemblyInfo.cs
+/Users/arsenijsafancikov/Dev/csharp/OOP/lab2/obj/Debug/net9.0/lab2.csproj.CoreCompileInputs.cache
+/Users/arsenijsafancikov/Dev/csharp/OOP/lab2/obj/Debug/net9.0/lab2.sourcelink.json
+/Users/arsenijsafancikov/Dev/csharp/OOP/lab2/obj/Debug/net9.0/lab2.dll
+/Users/arsenijsafancikov/Dev/csharp/OOP/lab2/obj/Debug/net9.0/refint/lab2.dll
+/Users/arsenijsafancikov/Dev/csharp/OOP/lab2/obj/Debug/net9.0/lab2.pdb
+/Users/arsenijsafancikov/Dev/csharp/OOP/lab2/obj/Debug/net9.0/lab2.genruntimeconfig.cache
+/Users/arsenijsafancikov/Dev/csharp/OOP/lab2/obj/Debug/net9.0/ref/lab2.dll

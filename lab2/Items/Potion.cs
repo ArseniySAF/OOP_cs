@@ -9,8 +9,5 @@ public class Potion : Item
         HealAmount = healAmount;
     }
 
-    public override void Use()
-    {
-        // логика лечения
-    }
+    public override void Use() {}
 }

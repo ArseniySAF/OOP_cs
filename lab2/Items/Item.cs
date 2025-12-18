@@ -3,7 +3,7 @@ namespace lab2.Items;
 public abstract class Item
 {
     public string Name { get; }
-    public bool IsEquipped { get; protected set; }
+    public bool IsEquipped { get; private set; }
 
     protected Item(string name)
     {
@@ -11,4 +11,14 @@ public abstract class Item
     }
 
     public abstract void Use();
+
+    protected void Equip()
+    {
+        IsEquipped = true;
+    }
+
+    protected void Unequip()
+    {
+        IsEquipped = false;
+    }
 }
